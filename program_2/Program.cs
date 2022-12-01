@@ -6,16 +6,6 @@ int Max(int ver1, int ver2, int ver3)
     if(result < ver3) { result = ver3; }
     return result;
 }
-
-int a1 = 12;
-int a2 = 45;
-int a3 = 50;
-int b1 = 40;
-int b2 = 23;
-int b3 = 454;
-int c1 = 32;
-int c2 = 4;
-int c3 = 67;
-
-int max = Max(Max(a1, a2, a3), Max(b1, b2,b3), Max(c1, c2, c3));
+int [] array = {1,3,4,5,6,7,8,9,2};
+int max = Max(Max(array[0], array[1], array[2]), Max(array[3], array[4],array[5]), Max(array[6], array[7], array[8]));
 Console.WriteLine(max);
